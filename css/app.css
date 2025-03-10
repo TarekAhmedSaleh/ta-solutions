@@ -1,5 +1,5 @@
 :root {
-    --image-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(images/home_hero_bg_2.webp);
+    --image-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(images/home_hero_bg.jpg);
     --white-glass-background: rgba(255,255,255,0.6);
     --white-glass-blur: blur(15px);
     --white-glass-border-color: rgba(255,255,255,0.6);
@@ -101,7 +101,7 @@ code {
         /*background-color: var(--bs-primary);
         color: white !important;
         border-radius: 0.5rem;*/
-        border-bottom:3px solid var(--bs-primary);
+        border-bottom:3px solid var(--bs-secondary);
     }
 }
 
