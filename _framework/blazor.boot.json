@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TASolutions",
   "resources": {
-    "hash": "sha256-29hiAb+PCo9R4WpWAT/6Z0vpoWXBfp06DxIuz7ASVSA=",
+    "hash": "sha256-iGs8Iw0529x0S7OQpCCSFbWVqbfcJXcdoycN179Boq8=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-xNQsYHtL1vcbrVTHDZAwJM4WovpoyjsrM2C6FQ8cW1w="
     },
@@ -48,7 +48,7 @@
       "System.Text.Encodings.Web.wasm": "sha256-5PQ0jI5N03Ra0lfAcPPvNGlBYfeMWROezvc+MRXvDPo=",
       "System.Text.Json.wasm": "sha256-EBwG1LQ929kO/Na1lh3jqMpxfGl9ta1bg6dmkHjZVEE=",
       "System.Text.RegularExpressions.wasm": "sha256-nsPWW6LIGQF7+Dm7/hbRPceB4MHdZnBLhoa98BacDZ4=",
-      "TASolutions.wasm": "sha256-1l4cFito5CpLrjTudRk8Q+PewOBkI7CHK//TzP2bAzo="
+      "TASolutions.wasm": "sha256-OiUTe6w5uJ/qjHVWu3eSBLn9bnoxxfS9pH/aextYR34="
     }
   },
   "cacheBootResources": true,
