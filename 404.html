@@ -2,6 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // Clear any service workers left over from previous Blazor PWA deployment
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          if (registrations.length > 0) {
+            for (let registration of registrations) {
+              registration.unregister();
+            }
+            window.location.reload();
+          }
+        });
+      }
+    </script>
     <link rel="icon" type="image/png" href="/ta-solutions/assets/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
