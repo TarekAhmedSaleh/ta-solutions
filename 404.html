@@ -18,6 +18,18 @@
     <link rel="icon" type="image/png" href="/ta-solutions/assets/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Apply the saved theme before paint (default: light) to avoid a flash -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('ta-theme');
+          document.documentElement.setAttribute('data-theme', t === 'dark' ? 'dark' : 'light');
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+
     <!-- Primary Meta -->
     <meta name="description" content="TA Solutions builds intelligent AEC automation plugins for AutoCAD, Civil 3D, Navisworks and Revit. Trusted by engineers worldwide on the Autodesk App Store." />
     <meta name="author" content="TA Solutions" />
@@ -43,8 +55,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/ta-solutions/assets/index-CQfkTokO.js"></script>
-    <link rel="stylesheet" crossorigin href="/ta-solutions/assets/index-BevXZSWC.css">
+    <script type="module" crossorigin src="/ta-solutions/assets/index-BVVz3bSj.js"></script>
+    <link rel="stylesheet" crossorigin href="/ta-solutions/assets/index-CFsGjKNe.css">
   </head>
   <body>
     <div id="root"></div>
