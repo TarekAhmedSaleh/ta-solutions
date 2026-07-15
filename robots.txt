@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tarekahmedsaleh.github.io/ta-solutions/sitemap.xml
+Sitemap: https://tasolutionstech.com/sitemap.xml
