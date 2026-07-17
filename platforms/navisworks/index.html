@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Clear any service workers left over from previous Blazor PWA deployment
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          if (registrations.length > 0) {
+            for (let registration of registrations) {
+              registration.unregister();
+            }
+            window.location.reload();
+          }
+        });
+      }
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0A1120" media="(prefers-color-scheme: dark)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Resolve the theme before paint, to avoid a flash. An explicit choice
+         (only written when the visitor uses the toggle) always wins; otherwise
+         follow the browser's prefers-color-scheme, which itself follows the OS
+         unless overridden. Falls back to light. -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('ta-theme');
+          if (t !== 'dark' && t !== 'light') {
+            t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+
+    <!-- Primary Meta -->
+    <meta name="description" content="We build Navisworks tools for model review and coordination, including live elevation checking and viewpoint capture." />
+    <meta name="author" content="TA Solutions" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <!-- og:url / og:image are rewritten to absolute production URLs by the
+         deploy pipeline (scripts/postbuild-seo.mjs). Dev uses root-relative. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tasolutionstech.com/platforms/navisworks/" />
+    <meta property="og:site_name" content="TA Solutions" />
+    <meta property="og:title" content="Navisworks — TA Solutions" />
+    <meta property="og:description" content="We build Navisworks tools for model review and coordination, including live elevation checking and viewpoint capture." />
+    <meta property="og:image" content="https://tasolutionstech.com/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="TA Solutions — precision AEC automation plugins for AutoCAD, Civil 3D and Navisworks." />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Navisworks — TA Solutions" />
+    <meta name="twitter:description" content="We build Navisworks tools for model review and coordination, including live elevation checking and viewpoint capture." />
+    <meta name="twitter:image" content="https://tasolutionstech.com/assets/og-image.png" />
+    <meta name="twitter:image:alt" content="TA Solutions — precision AEC automation plugins for AutoCAD, Civil 3D and Navisworks." />
+
+    <title>Navisworks — TA Solutions</title>
+    <!-- Fonts are self-hosted as variable faces (see src/main.tsx). No
+         render-blocking Google Fonts request, and no visitor IPs sent to a
+         third party. -->
+
+    <script type="module" crossorigin src="/assets/index-BdplzAmv.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-TwEgc_lF.css">
+      <link rel="canonical" href="https://tasolutionstech.com/platforms/navisworks/" />
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

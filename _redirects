@@ -1,0 +1,5 @@
+# Redirects for Netlify / Cloudflare Pages. INERT on GitHub Pages.
+# Normalize the /home alias to the canonical homepage (dedupes content).
+# Unknown routes are served by the copied 404.html with a real 404 status,
+# where the SPA renders the NotFound page — so no SPA catch-all is needed.
+/home    /    301!
